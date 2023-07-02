@@ -21,7 +21,9 @@ var Chartist = {
    */
   Chartist.namespaces = {
     svg: 'http://www.w3.org/2000/svg',
-    xmlns: 'http://www.w3.org/2000/xmlns/',
+    // This was invalid namespace, broke other tools
+    // xmlns: 'http://www.w3.org/2000/xmlns/',
+    xmlns: 'http://www.w3.org/1999/xhtml',
     xhtml: 'http://www.w3.org/1999/xhtml',
     xlink: 'http://www.w3.org/1999/xlink',
     ct: 'http://gionkunz.github.com/chartist-js/ct'

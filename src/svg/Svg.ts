@@ -198,7 +198,7 @@ export class Svg {
 
     if (contentNode instanceof Element) {
       // Adding namespace to content element
-      contentNode.setAttribute('xmlns', namespaces.xmlns);
+      contentNode.setAttribute('xmlns', namespaces.xhtml);
     }
 
     // Creating the foreignObject without required extension attribute (as described here
@@ -293,7 +293,7 @@ export class Svg {
       'class',
       this.classes()
         .concat(names.trim().split(/\s+/))
-        .filter(function (elem, pos, self) {
+        .filter(function(elem, pos, self) {
           return self.indexOf(elem) === pos;
         })
         .join(' ')
